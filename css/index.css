@@ -70,3 +70,9 @@ body .left-side section {
 body .right-side {
   background-color: #BE6360;
 }
+.right-side h2 {
+  color: #FCFBFB;
+}
+.right-side p {
+  font-style: italic;
+}
