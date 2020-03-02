@@ -3,6 +3,70 @@
   margin: 0;
   padding: 0;
   max-width: 100%;
-  font-size: 62.5%;
   border: 1px solid grey;
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Montserrat Light'), local('Montserrat-Light'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_cJD3gnD-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Glass Antiqua';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Glass Antiqua'), local('GlassAntiqua-Regular'), url(https://fonts.gstatic.com/s/glassantiqua/v7/xfu30Wr0Wn3NOQM2piC0uXOjrLj6Mw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Abril Fatface';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Abril Fatface'), local('AbrilFatface-Regular'), url(https://fonts.gstatic.com/s/abrilfatface/v11/zOL64pLDlL1D99S8g8PtiKchq-dmiA.ttf) format('truetype');
+}
+html {
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 2.3rem;
+  font-family: 'Abril Fatface';
+  color: #D03446;
+}
+h2,
+h3 {
+  font-family: 'Glass Antiqua';
+  font-size: 2rem;
+  color: #9C8D84;
+  padding-bottom: 10px;
+}
+p,
+a {
+  font-size: 1.7rem;
+  font-family: 'Montserrat';
+}
+p {
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  display: flex;
+}
+body .left-side {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #FCFBFB;
+}
+body .left-side section {
+  max-width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+body .right-side {
+  background-color: #BE6360;
 }
