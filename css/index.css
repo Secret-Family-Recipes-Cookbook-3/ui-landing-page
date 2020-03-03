@@ -83,6 +83,7 @@ body .right-side {
 }
 .right-side {
   background-color: #BE6360;
+  width: 22%;
 }
 .right-side h2 {
   color: #FCFBFB;
@@ -97,7 +98,7 @@ body .right-side {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 15% 0;
+  margin: 10% 0;
 }
 .right-side .links nav a {
   margin: 5% 0;
@@ -127,34 +128,30 @@ body .right-side {
 .content h3 {
   padding: 2% 0;
 }
+#about p {
+  padding-bottom: 15px;
+}
 .reason {
   display: flex;
   border-bottom: 3px solid #E1CEC9;
   padding: 3% 0;
 }
-.whyUs {
+#whyUs {
   border-top: 3px solid #9C8D84;
   border-bottom: 3px solid #9C8D84;
 }
-.whyUs .image {
-  height: 298px;
+#whyUs .image {
+  height: 345px;
 }
-.whyUs .image img {
+#whyUs .image img {
   width: 75%;
   height: 100%;
   object-fit: contain;
 }
-.whyUs .words {
-  height: 298px;
+#whyUs .words {
   margin-right: 3%;
 }
-.whyUs .words h3,
-.whyUs .words p {
-  width: 100%;
-  object-fit: contain;
-  white-space: pre-wrap;
-}
-.whyUs .words p {
+#whyUs .words p {
   font-size: 1.75rem;
 }
 .buttonsNThings {
