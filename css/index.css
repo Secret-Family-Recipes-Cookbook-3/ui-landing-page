@@ -140,17 +140,19 @@ body .right-side {
   height: 298px;
 }
 .whyUs .image img {
-  width: 100%;
+  width: 75%;
   height: 100%;
   object-fit: contain;
 }
 .whyUs .words {
   height: 298px;
+  margin-right: 3%;
 }
-.whyUs .words p,
-.whyUs .words h3 {
+.whyUs .words h3,
+.whyUs .words p {
   width: 100%;
   object-fit: contain;
+  white-space: pre-wrap;
 }
 .whyUs .words p {
   font-size: 1.75rem;
