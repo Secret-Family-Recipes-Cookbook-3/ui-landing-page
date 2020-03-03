@@ -1,3 +1,9 @@
+.test {
+  border: 1px solid red;
+}
+.padding2 {
+  padding: 2%;
+}
 * {
   box-sizing: border box;
   margin: 0;
@@ -30,20 +36,23 @@ html {
   font-size: 62.5%;
 }
 h1 {
-  font-size: 2.3rem;
+  font-size: 5rem;
   font-family: 'Abril Fatface';
   color: #D03446;
 }
 h2,
 h3 {
   font-family: 'Glass Antiqua';
-  font-size: 2rem;
+  font-size: 4rem;
   color: #9C8D84;
   padding-bottom: 10px;
 }
+h3 {
+  font-size: 3rem;
+}
 p,
 a {
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-family: 'Montserrat';
 }
 p {
@@ -63,16 +72,53 @@ body .left-side {
   background-color: #FCFBFB;
 }
 body .left-side section {
-  max-width: 90%;
   display: flex;
   flex-wrap: wrap;
 }
 body .right-side {
   background-color: #BE6360;
 }
+.right-side {
+  background-color: #BE6360;
+  border: 1px solid red;
+}
+.right-side div {
+  border: 1px solid red;
+}
 .right-side h2 {
   color: #FCFBFB;
+  border: 1px solid red;
+  padding: 10% 2%;
 }
 .right-side p {
   font-style: italic;
+  border: 1px solid red;
+  padding: 2%;
+}
+.right-side .links nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid red;
+  margin: 15% 0;
+}
+.right-side .links nav a {
+  border: 1px solid red;
+  margin: 5% 0;
+  color: #FCFBFB;
+  text-decoration: none;
+  width: 100%;
+  padding: 5% 0%;
+  text-align: center;
+  border-bottom: 3px solid #E1CEC9;
+}
+.right-side .links nav a:hover {
+  color: #BE6360;
+  background-color: #FCFBFB;
+}
+.right-side footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
