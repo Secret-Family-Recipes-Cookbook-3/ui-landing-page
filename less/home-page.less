@@ -19,21 +19,23 @@
 
 .whyUs{
     border-top:3px solid @teddy;
-    border-bottom: 3px solid@teddy;
+    border-bottom: 3px solid @teddy;
 
-    .image, .words{
+    .image{
         height: 298px;
 
         img{
             width:100%;
             height:100%;
-            object-fit: contain;;
-        }
+            object-fit: contain;
+        }//end of img
     }//image container
 
     .words{
+        height: 298px;
 
         p, h3{
+            width:100%;
             object-fit: contain;
         }//p, h3
 
@@ -45,5 +47,8 @@
 
 .buttonsNThings{
     width:100%;
-    text-align: center;
+    
+    button{
+        .button(150px, 75px, 2rem)
+    }
 }

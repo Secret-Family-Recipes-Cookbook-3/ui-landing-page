@@ -136,18 +136,20 @@ body .right-side {
   border-top: 3px solid #9C8D84;
   border-bottom: 3px solid #9C8D84;
 }
-.whyUs .image,
-.whyUs .words {
+.whyUs .image {
   height: 298px;
 }
-.whyUs .image img,
-.whyUs .words img {
+.whyUs .image img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+.whyUs .words {
+  height: 298px;
+}
 .whyUs .words p,
 .whyUs .words h3 {
+  width: 100%;
   object-fit: contain;
 }
 .whyUs .words p {
@@ -155,5 +157,15 @@ body .right-side {
 }
 .buttonsNThings {
   width: 100%;
-  text-align: center;
+}
+.buttonsNThings button {
+  background-color: #D03446;
+  color: #FCFBFB;
+  width: 150px;
+  height: 75px;
+  font-size: 2rem;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  margin: 2% 0 0;
 }
