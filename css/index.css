@@ -43,6 +43,12 @@ h1 {
   font-family: 'Abril Fatface';
   color: #D03446;
 }
+@media (max-width: 800px) {
+  h1 {
+    font-size: 4.5rem;
+    text-align: center;
+  }
+}
 h2,
 h3 {
   font-family: 'Glass Antiqua';
@@ -50,13 +56,31 @@ h3 {
   color: #9C8D84;
   padding-bottom: 10px;
 }
+@media (max-width: 800px) {
+  h2,
+  h3 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+}
 h3 {
   font-size: 3rem;
+}
+@media (max-width: 800px) {
+  h3 {
+    font-size: 2.7rem;
+  }
 }
 p,
 a {
   font-size: 2rem;
   font-family: 'Montserrat';
+}
+@media (max-width: 800px) {
+  p,
+  a {
+    text-align: center;
+  }
 }
 p {
   line-height: 1.5;
@@ -70,20 +94,22 @@ body {
   display: flex;
 }
 body .left-side {
-  width: 100%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 0 0;
   background-color: #FCFBFB;
+}
+@media (max-width: 800px) {
+  body .left-side {
+    width: 75%;
+  }
 }
 body .left-side section {
   display: flex;
   flex-wrap: wrap;
 }
-body .right-side {
-  background-color: #BE6360;
-}
 .right-side {
   background-color: #BE6360;
-  width: 22%;
+  width: 20%;
   height: 100%;
   top: 0;
   right: 0;
@@ -122,6 +148,11 @@ body .right-side {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .right-side {
+    width: 25%;
+  }
+}
 .content {
   padding: 5% 1% 5% 5%;
 }
@@ -152,6 +183,11 @@ body .right-side {
   height: 100%;
   object-fit: contain;
 }
+@media (max-width: 800px) {
+  #whyUs .image img {
+    width: 90%;
+  }
+}
 #whyUs .words {
   margin-right: 3%;
 }
@@ -160,6 +196,12 @@ body .right-side {
 }
 .buttonsNThings {
   width: 100%;
+}
+@media (max-width: 800px) {
+  .buttonsNThings {
+    display: flex;
+    justify-content: center;
+  }
 }
 .buttonsNThings button {
   background-color: #D03446;
@@ -171,4 +213,17 @@ body .right-side {
   font-family: 'Montserrat';
   font-weight: bold;
   margin: 2% 0 0;
+}
+@media (max-width: 800px) {
+  .buttonsNThings button {
+    background-color: #D03446;
+    color: #FCFBFB;
+    width: 200px;
+    height: 75px;
+    font-size: 2rem;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin: 2% 0 0;
+  }
 }
