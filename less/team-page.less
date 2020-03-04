@@ -4,12 +4,20 @@
     display: flex;
     flex-wrap: wrap;
 
+    @media @tablet{
+        flex-direction: column;
+    }//end of mq
+
     .person{
         display:flex;
         flex-direction: column;
         width: 47%;
         .bdr-btm();
         padding: 3% 0;
+
+        @media @tablet{
+            width: 100%;
+        }//end of mq
 
         .portfolio{
             width: 64%;
@@ -30,12 +38,22 @@
         button{
             .button(150px, 45px, 2rem);
                 margin-left: 4%;
-                
+                // background-color: @berry;
+
             &:hover{
                 background-color: @dark;
                 color: @white;
                 border:none;
+            }//end of hover
+
+            @media @tablet{
+                .button(200px, 50px, 2.3rem);
             }
-        }
+        }//end of button
     }//end of person
 }//end of .blocks
+.heading{
+    @media @tablet{
+        width: 100%;
+    }//end of mq
+}//end of heading

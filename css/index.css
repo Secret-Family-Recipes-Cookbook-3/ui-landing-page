@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   max-width: 100%;
+  border: 1px solid grey;
 }
 @font-face {
   font-family: 'Montserrat';
@@ -138,8 +139,9 @@ body .left-side section {
 }
 .right-side p {
   font-style: italic;
+  text-align: center;
   padding: 2%;
-  color: #4A3731;
+  color: #E1CEC9;
 }
 @media (max-width: 600px) {
   .right-side p {
@@ -162,7 +164,7 @@ body .left-side section {
   border-bottom: 2px dashed #E1CEC9;
 }
 .right-side .links nav a:hover {
-  color: #BE6360;
+  color: #D03446;
   background-color: #FCFBFB;
 }
 @media (max-width: 600px) {
@@ -289,12 +291,22 @@ body .left-side section {
   display: flex;
   flex-wrap: wrap;
 }
+@media (max-width: 800px) {
+  .blocks {
+    flex-direction: column;
+  }
+}
 .blocks .person {
   display: flex;
   flex-direction: column;
   width: 47%;
   border-bottom: 2px dashed #E1CEC9;
   padding: 3% 0;
+}
+@media (max-width: 800px) {
+  .blocks .person {
+    width: 100%;
+  }
 }
 .blocks .person .portfolio {
   width: 64%;
@@ -330,4 +342,27 @@ body .left-side section {
   background-color: #4A3731;
   color: #FCFBFB;
   border: none;
+}
+@media (max-width: 800px) {
+  .blocks .person button {
+    background-color: #D03446;
+    color: #FCFBFB;
+    width: 200px;
+    height: 50px;
+    font-size: 2.3rem;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    margin: 2% 0 0;
+  }
+  .blocks .person button:hover {
+    background-color: #FCFBFB;
+    color: #D03446;
+    border: 1px solid #D03446;
+  }
+}
+@media (max-width: 800px) {
+  .heading {
+    width: 100%;
+  }
 }
