@@ -1,0 +1,41 @@
+//STYLING FOR MEET THE TEAM PAGE
+
+.blocks{
+    display: flex;
+    flex-wrap: wrap;
+
+    .person{
+        display:flex;
+        flex-direction: column;
+        width: 47%;
+        .bdr-btm();
+        padding: 3% 0;
+
+        .portfolio{
+            width: 64%;
+            margin-left: 17%;
+
+            img{
+                margin-bottom: 4%;
+            }//end of img
+        }//end of portfolio
+
+        .team{
+            text-align: center;
+        }//end of team
+
+        p{
+            padding:4%;
+        }
+        button{
+            .button(150px, 45px, 2rem);
+                margin-left: 4%;
+                
+            &:hover{
+                background-color: @dark;
+                color: @white;
+                border:none;
+            }
+        }
+    }//end of person
+}//end of .blocks

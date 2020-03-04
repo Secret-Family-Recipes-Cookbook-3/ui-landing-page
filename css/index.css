@@ -12,7 +12,6 @@
   margin: 0;
   padding: 0;
   max-width: 100%;
-  border: 1px solid grey;
 }
 @font-face {
   font-family: 'Montserrat';
@@ -258,8 +257,13 @@ body .left-side section {
   font-size: 2rem;
   border-radius: 10px;
   font-family: 'Montserrat';
-  font-weight: bold;
+  font-weight: bolder;
   margin: 2% 0 0;
+}
+.buttonsNThings button:hover {
+  background-color: #FCFBFB;
+  color: #D03446;
+  border: 1px solid #D03446;
 }
 @media (max-width: 800px) {
   .buttonsNThings button {
@@ -270,7 +274,58 @@ body .left-side section {
     font-size: 2rem;
     border-radius: 10px;
     font-family: 'Montserrat';
-    font-weight: bold;
+    font-weight: bolder;
     margin: 2% 0 0;
   }
+  .buttonsNThings button:hover {
+    background-color: #FCFBFB;
+    color: #D03446;
+    border: 1px solid #D03446;
+  }
+}
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+.blocks .person {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+  border-bottom: 3px solid #E1CEC9;
+  padding: 3% 0;
+}
+.blocks .person .portfolio {
+  width: 64%;
+  margin-left: 17%;
+}
+.blocks .person .portfolio img {
+  margin-bottom: 4%;
+}
+.blocks .person .team {
+  text-align: center;
+}
+.blocks .person p {
+  padding: 4%;
+}
+.blocks .person button {
+  background-color: #D03446;
+  color: #FCFBFB;
+  width: 150px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  margin: 2% 0 0;
+  margin-left: 4%;
+}
+.blocks .person button:hover {
+  background-color: #FCFBFB;
+  color: #D03446;
+  border: 1px solid #D03446;
+}
+.blocks .person button:hover {
+  background-color: #4A3731;
+  color: #FCFBFB;
+  border: none;
 }
