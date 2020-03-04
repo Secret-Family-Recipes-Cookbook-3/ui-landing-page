@@ -17,6 +17,11 @@
     display:flex;
     .bdr-btm();
     padding: 3% 0;
+
+    @media @mobile{
+        flex-direction: column;
+        padding:0;
+    }//end of mq
 }//end of reason
 
 #whyUs{
@@ -34,12 +39,20 @@
             @media @tablet{
                 width: 90%;
             }//end of mq
+            @media @mobile{
+                width:100%;
+            }//end of mq
         }//end of img
     }//image container
 
     .words{
         margin-right: 3%;
 
+        h3{
+            @media @mobile{
+                font-size: 2.9rem;
+            }//end of mq
+        }
         p{
             font-size:1.75rem;
         }//p

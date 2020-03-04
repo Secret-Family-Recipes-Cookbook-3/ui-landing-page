@@ -49,6 +49,11 @@ h1 {
     text-align: center;
   }
 }
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
 h2,
 h3 {
   font-family: 'Glass Antiqua';
@@ -63,12 +68,23 @@ h3 {
     text-align: center;
   }
 }
+@media (max-width: 600px) {
+  h2,
+  h3 {
+    font-size: 3.5rem;
+  }
+}
 h3 {
   font-size: 3rem;
 }
 @media (max-width: 800px) {
   h3 {
     font-size: 2.7rem;
+  }
+}
+@media (max-width: 600px) {
+  h3 {
+    font-size: 1.7rem;
   }
 }
 p,
@@ -103,6 +119,11 @@ body .left-side {
     width: 75%;
   }
 }
+@media (max-width: 600px) {
+  body .left-side {
+    width: 70%;
+  }
+}
 body .left-side section {
   display: flex;
   flex-wrap: wrap;
@@ -117,7 +138,7 @@ body .left-side section {
 }
 .right-side h2 {
   color: #FCFBFB;
-  padding: 10% 2%;
+  padding: 2%;
 }
 .right-side p {
   font-style: italic;
@@ -153,6 +174,11 @@ body .left-side section {
     width: 25%;
   }
 }
+@media (max-width: 600px) {
+  .right-side {
+    width: 30%;
+  }
+}
 .content {
   padding: 5% 1% 5% 5%;
 }
@@ -171,6 +197,12 @@ body .left-side section {
   border-bottom: 3px solid #E1CEC9;
   padding: 3% 0;
 }
+@media (max-width: 600px) {
+  .reason {
+    flex-direction: column;
+    padding: 0;
+  }
+}
 #whyUs {
   border-top: 3px solid #9C8D84;
   border-bottom: 3px solid #9C8D84;
@@ -188,8 +220,18 @@ body .left-side section {
     width: 90%;
   }
 }
+@media (max-width: 600px) {
+  #whyUs .image img {
+    width: 100%;
+  }
+}
 #whyUs .words {
   margin-right: 3%;
+}
+@media (max-width: 600px) {
+  #whyUs .words h3 {
+    font-size: 2.9rem;
+  }
 }
 #whyUs .words p {
   font-size: 1.75rem;

@@ -18,6 +18,9 @@ h1{
         font-size: @h1size800;
         text-align: center;
     }//end of mq
+    @media @mobile{
+        font-size: @h1size500;
+    }//end of mq
 }
 
 h2, h3{
@@ -30,12 +33,18 @@ h2, h3{
         font-size: @h2size800;
         text-align: center;
     }//end of mq
+    @media @mobile{
+        font-size: @h2size500;
+    }//end of mq
 }
 h3{
     font-size: @h3size;
 
     @media @tablet{
         font-size: @h3size800;
+    }//end of mq
+    @media @mobile{
+        font-size: @h3size500;
     }//end of mq
 }
 p, a{
@@ -68,7 +77,9 @@ body{
         @media @tablet{
             width:75%;
         }
-
+        @media @mobile{
+            width: 70%;
+        }//end of mq
         section{
             display: flex;
             flex-wrap: wrap;
