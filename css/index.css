@@ -143,6 +143,12 @@ body .left-side section {
 .right-side p {
   font-style: italic;
   padding: 2%;
+  color: #4A3731;
+}
+@media (max-width: 600px) {
+  .right-side p {
+    font-size: medium;
+  }
 }
 .right-side .links nav {
   display: flex;
@@ -152,7 +158,6 @@ body .left-side section {
   margin: 10% 0;
 }
 .right-side .links nav a {
-  margin: 5% 0;
   color: #FCFBFB;
   text-decoration: none;
   width: 100%;
