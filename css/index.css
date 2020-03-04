@@ -232,6 +232,9 @@ body .left-side section {
     width: 100%;
   }
 }
+#whyUs .c {
+  margin-left: 1%;
+}
 #whyUs .words {
   margin-right: 3%;
 }
@@ -262,11 +265,17 @@ body .left-side section {
   font-family: 'Montserrat';
   font-weight: bolder;
   margin: 2% 0 0;
+  outline: none;
 }
 .buttonsNThings button:hover {
   background-color: #FCFBFB;
   color: #D03446;
   border: 1px solid #D03446;
+}
+.buttonsNThings button:active {
+  background-color: #E1CEC9;
+  color: #4A3731;
+  border: 1px solid #4A3731;
 }
 @media (max-width: 800px) {
   .buttonsNThings button {
@@ -279,11 +288,17 @@ body .left-side section {
     font-family: 'Montserrat';
     font-weight: bolder;
     margin: 2% 0 0;
+    outline: none;
   }
   .buttonsNThings button:hover {
     background-color: #FCFBFB;
     color: #D03446;
     border: 1px solid #D03446;
+  }
+  .buttonsNThings button:active {
+    background-color: #E1CEC9;
+    color: #4A3731;
+    border: 1px solid #4A3731;
   }
 }
 .blocks {
@@ -334,6 +349,7 @@ body .left-side section {
   font-family: 'Montserrat';
   font-weight: bolder;
   margin: 2% 0 0;
+  outline: none;
   margin-left: 4%;
 }
 .blocks .person button:hover {
@@ -341,10 +357,19 @@ body .left-side section {
   color: #D03446;
   border: 1px solid #D03446;
 }
+.blocks .person button:active {
+  background-color: #E1CEC9;
+  color: #4A3731;
+  border: 1px solid #4A3731;
+}
 .blocks .person button:hover {
   background-color: #4A3731;
   color: #FCFBFB;
   border: none;
+}
+.blocks .person button:active {
+  background-color: #BE6360;
+  border: 1px solid #4A3731;
 }
 @media (max-width: 800px) {
   .blocks .person button {
@@ -357,11 +382,17 @@ body .left-side section {
     font-family: 'Montserrat';
     font-weight: bolder;
     margin: 2% 0 0;
+    outline: none;
   }
   .blocks .person button:hover {
     background-color: #FCFBFB;
     color: #D03446;
     border: 1px solid #D03446;
+  }
+  .blocks .person button:active {
+    background-color: #E1CEC9;
+    color: #4A3731;
+    border: 1px solid #4A3731;
   }
 }
 @media (max-width: 800px) {
