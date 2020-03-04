@@ -4,9 +4,6 @@
 .padding2 {
   padding: 2%;
 }
-.bdr-btm {
-  border-bottom: 3px solid #E1CEC9;
-}
 * {
   box-sizing: border box;
   margin: 0;
@@ -160,13 +157,18 @@ body .left-side section {
   color: #FCFBFB;
   text-decoration: none;
   width: 100%;
-  padding: 5% 0%;
+  padding: 8% 0%;
   text-align: center;
-  border-bottom: 3px solid #E1CEC9;
+  border-bottom: 2px dashed #E1CEC9;
 }
 .right-side .links nav a:hover {
   color: #BE6360;
   background-color: #FCFBFB;
+}
+@media (max-width: 600px) {
+  .right-side .links nav a {
+    padding: 12% 0;
+  }
 }
 .right-side footer {
   display: flex;
@@ -198,7 +200,7 @@ body .left-side section {
 }
 .reason {
   display: flex;
-  border-bottom: 3px solid #E1CEC9;
+  border-bottom: 2px dashed #E1CEC9;
   padding: 3% 0;
 }
 @media (max-width: 600px) {
@@ -291,7 +293,7 @@ body .left-side section {
   display: flex;
   flex-direction: column;
   width: 47%;
-  border-bottom: 3px solid #E1CEC9;
+  border-bottom: 2px dashed #E1CEC9;
   padding: 3% 0;
 }
 .blocks .person .portfolio {
