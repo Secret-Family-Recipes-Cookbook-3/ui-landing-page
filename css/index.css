@@ -9,7 +9,6 @@
   margin: 0;
   padding: 0;
   max-width: 100%;
-  border: 1px solid grey;
 }
 @font-face {
   font-family: 'Montserrat';
@@ -314,6 +313,10 @@ body .left-side section {
 }
 .blocks .person .portfolio img {
   margin-bottom: 4%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 2px 2px #9C8D84;
 }
 .blocks .person .team {
   text-align: center;
