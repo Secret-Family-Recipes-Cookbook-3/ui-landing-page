@@ -1,12 +1,48 @@
 //Navigation styling
 
 .right-side{
+    background-color:@right-bg;
+    width: 22%;
+    height:100%;
+    top:0;
+    right:0;
+    position: fixed;
 
-    h2{
-        color: @white;
-    }//end of h2
-    p{
+      h2{
+          color: @white;
+          padding: 10% 2%;
+      }//end of h2
+      p{
         font-style: italic;
-    }
-}//end of right-side
+        .padding2();
+      }//p
+      
+    .links{
+      nav{
+        .flex(center, center);
+        flex-direction: column;
+        margin: 10% 0;
+        
+        a{
+          margin: 5% 0;
+          color: @white;
+          text-decoration: none;
+          width: 100%;
+          padding: 5% 0%;
+          text-align: center;
+          .bdr-btm();
+
+          &:hover{
+              color: @right-bg;
+              background-color: @white;
+          }//hover end
+        }//(a) end
+      }//end of nav
+    }//end of .links
+
+    footer{
+        .flex(center, center);
+    }//end of footer
+
+  }//end of right-side
 

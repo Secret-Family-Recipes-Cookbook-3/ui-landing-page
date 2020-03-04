@@ -1,3 +1,12 @@
+.test {
+  border: 1px solid red;
+}
+.padding2 {
+  padding: 2%;
+}
+.bdr-btm {
+  border-bottom: 3px solid #E1CEC9;
+}
 * {
   box-sizing: border box;
   margin: 0;
@@ -30,20 +39,23 @@ html {
   font-size: 62.5%;
 }
 h1 {
-  font-size: 2.3rem;
+  font-size: 5rem;
   font-family: 'Abril Fatface';
   color: #D03446;
 }
 h2,
 h3 {
   font-family: 'Glass Antiqua';
-  font-size: 2rem;
+  font-size: 4rem;
   color: #9C8D84;
   padding-bottom: 10px;
 }
+h3 {
+  font-size: 3rem;
+}
 p,
 a {
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-family: 'Montserrat';
 }
 p {
@@ -63,16 +75,100 @@ body .left-side {
   background-color: #FCFBFB;
 }
 body .left-side section {
-  max-width: 90%;
   display: flex;
   flex-wrap: wrap;
 }
 body .right-side {
   background-color: #BE6360;
 }
+.right-side {
+  background-color: #BE6360;
+  width: 22%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: fixed;
+}
 .right-side h2 {
   color: #FCFBFB;
+  padding: 10% 2%;
 }
 .right-side p {
   font-style: italic;
+  padding: 2%;
+}
+.right-side .links nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10% 0;
+}
+.right-side .links nav a {
+  margin: 5% 0;
+  color: #FCFBFB;
+  text-decoration: none;
+  width: 100%;
+  padding: 5% 0%;
+  text-align: center;
+  border-bottom: 3px solid #E1CEC9;
+}
+.right-side .links nav a:hover {
+  color: #BE6360;
+  background-color: #FCFBFB;
+}
+.right-side footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  padding: 5% 1% 5% 5%;
+}
+.content h1 {
+  padding-bottom: 1%;
+}
+.content h2,
+.content h3 {
+  padding: 2% 0;
+}
+#about p {
+  padding-bottom: 15px;
+}
+.reason {
+  display: flex;
+  border-bottom: 3px solid #E1CEC9;
+  padding: 3% 0;
+}
+#whyUs {
+  border-top: 3px solid #9C8D84;
+  border-bottom: 3px solid #9C8D84;
+}
+#whyUs .image {
+  height: 345px;
+}
+#whyUs .image img {
+  width: 75%;
+  height: 100%;
+  object-fit: contain;
+}
+#whyUs .words {
+  margin-right: 3%;
+}
+#whyUs .words p {
+  font-size: 1.75rem;
+}
+.buttonsNThings {
+  width: 100%;
+}
+.buttonsNThings button {
+  background-color: #D03446;
+  color: #FCFBFB;
+  width: 150px;
+  height: 75px;
+  font-size: 2rem;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  margin: 2% 0 0;
 }

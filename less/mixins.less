@@ -1,0 +1,31 @@
+//Mixins go here
+
+.test{
+    border:1px solid red;
+}
+
+.flex(@justify, @align){
+    display:flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.padding2{
+    padding: 2%;
+  }
+
+  .bdr-btm{
+      border-bottom: 3px solid @beige;
+  }
+
+  .button(@width, @height, @text){
+      background-color: @red;
+      color: @white;
+      width: @width;
+      height: @height;
+      font-size: @text;
+      border-radius: 10px;
+      font-family: @Monty;
+      font-weight: bold;
+      margin: 2% 0 0;
+  }
