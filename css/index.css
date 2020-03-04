@@ -176,6 +176,18 @@ body .left-side section {
   justify-content: center;
   align-items: center;
 }
+.right-side footer .icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.right-side footer .icons i {
+  color: #4A3731;
+}
+.right-side footer .icons i:hover {
+  color: #E1CEC9;
+}
 @media (max-width: 800px) {
   .right-side {
     width: 25%;
