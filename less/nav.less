@@ -2,19 +2,26 @@
 
 .right-side{
     background-color:@right-bg;
-    width: 22%;
+    width: 20%;
     height:100%;
     top:0;
     right:0;
     position: fixed;
 
+
       h2{
           color: @white;
-          padding: 10% 2%;
+          padding: 2%;
       }//end of h2
       p{
         font-style: italic;
+        text-align: center;
         .padding2();
+        color: @beige;
+
+        @media @mobile{
+            font-size: medium;
+        }
       }//p
       
     .links{
@@ -24,25 +31,48 @@
         margin: 10% 0;
         
         a{
-          margin: 5% 0;
           color: @white;
           text-decoration: none;
           width: 100%;
-          padding: 5% 0%;
+          padding: 8% 0%;
           text-align: center;
           .bdr-btm();
 
           &:hover{
-              color: @right-bg;
+              color: @red;
               background-color: @white;
           }//hover end
+
+          @media @mobile{
+            padding: 12% 0;
+          }
         }//(a) end
       }//end of nav
     }//end of .links
 
     footer{
         .flex(center, center);
+        // padding: 8% 0;
+
+        .icons{
+          .flex(space-evenly, center);
+          width: 100%;
+
+          i{
+            color: @dark;
+  
+            &:hover{
+              color: @beige;
+            }//end of hove
+          }//end of i
+        }//end of .icons
     }//end of footer
 
+    @media @tablet{
+        width: 25%;
+    }
+    @media @mobile{
+        width: 30%;
+    }//end of mq
   }//end of right-side
 

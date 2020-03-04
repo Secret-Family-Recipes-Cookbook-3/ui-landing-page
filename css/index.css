@@ -4,15 +4,11 @@
 .padding2 {
   padding: 2%;
 }
-.bdr-btm {
-  border-bottom: 3px solid #E1CEC9;
-}
 * {
   box-sizing: border box;
   margin: 0;
   padding: 0;
   max-width: 100%;
-  border: 1px solid grey;
 }
 @font-face {
   font-family: 'Montserrat';
@@ -43,6 +39,17 @@ h1 {
   font-family: 'Abril Fatface';
   color: #D03446;
 }
+@media (max-width: 800px) {
+  h1 {
+    font-size: 4.5rem;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
 h2,
 h3 {
   font-family: 'Glass Antiqua';
@@ -50,13 +57,42 @@ h3 {
   color: #9C8D84;
   padding-bottom: 10px;
 }
+@media (max-width: 800px) {
+  h2,
+  h3 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  h2,
+  h3 {
+    font-size: 3.5rem;
+  }
+}
 h3 {
   font-size: 3rem;
+}
+@media (max-width: 800px) {
+  h3 {
+    font-size: 2.7rem;
+  }
+}
+@media (max-width: 600px) {
+  h3 {
+    font-size: 1.7rem;
+  }
 }
 p,
 a {
   font-size: 2rem;
   font-family: 'Montserrat';
+}
+@media (max-width: 800px) {
+  p,
+  a {
+    text-align: center;
+  }
 }
 p {
   line-height: 1.5;
@@ -70,20 +106,27 @@ body {
   display: flex;
 }
 body .left-side {
-  width: 100%;
-  margin: 0 auto;
+  width: 80%;
+  margin: 0 0;
   background-color: #FCFBFB;
+}
+@media (max-width: 800px) {
+  body .left-side {
+    width: 75%;
+  }
+}
+@media (max-width: 600px) {
+  body .left-side {
+    width: 70%;
+  }
 }
 body .left-side section {
   display: flex;
   flex-wrap: wrap;
 }
-body .right-side {
-  background-color: #BE6360;
-}
 .right-side {
   background-color: #BE6360;
-  width: 22%;
+  width: 20%;
   height: 100%;
   top: 0;
   right: 0;
@@ -91,11 +134,18 @@ body .right-side {
 }
 .right-side h2 {
   color: #FCFBFB;
-  padding: 10% 2%;
+  padding: 2%;
 }
 .right-side p {
   font-style: italic;
+  text-align: center;
   padding: 2%;
+  color: #E1CEC9;
+}
+@media (max-width: 600px) {
+  .right-side p {
+    font-size: medium;
+  }
 }
 .right-side .links nav {
   display: flex;
@@ -105,22 +155,48 @@ body .right-side {
   margin: 10% 0;
 }
 .right-side .links nav a {
-  margin: 5% 0;
   color: #FCFBFB;
   text-decoration: none;
   width: 100%;
-  padding: 5% 0%;
+  padding: 8% 0%;
   text-align: center;
-  border-bottom: 3px solid #E1CEC9;
+  border-bottom: 2px dashed #E1CEC9;
 }
 .right-side .links nav a:hover {
-  color: #BE6360;
+  color: #D03446;
   background-color: #FCFBFB;
+}
+@media (max-width: 600px) {
+  .right-side .links nav a {
+    padding: 12% 0;
+  }
 }
 .right-side footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.right-side footer .icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.right-side footer .icons i {
+  color: #4A3731;
+}
+.right-side footer .icons i:hover {
+  color: #E1CEC9;
+}
+@media (max-width: 800px) {
+  .right-side {
+    width: 25%;
+  }
+}
+@media (max-width: 600px) {
+  .right-side {
+    width: 30%;
+  }
 }
 .content {
   padding: 5% 1% 5% 5%;
@@ -137,8 +213,14 @@ body .right-side {
 }
 .reason {
   display: flex;
-  border-bottom: 3px solid #E1CEC9;
+  border-bottom: 2px dashed #E1CEC9;
   padding: 3% 0;
+}
+@media (max-width: 600px) {
+  .reason {
+    flex-direction: column;
+    padding: 0;
+  }
 }
 #whyUs {
   border-top: 3px solid #9C8D84;
@@ -152,14 +234,38 @@ body .right-side {
   height: 100%;
   object-fit: contain;
 }
+@media (max-width: 800px) {
+  #whyUs .image img {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  #whyUs .image img {
+    width: 100%;
+  }
+}
+#whyUs .c {
+  margin-left: 1%;
+}
 #whyUs .words {
   margin-right: 3%;
+}
+@media (max-width: 600px) {
+  #whyUs .words h3 {
+    font-size: 2.9rem;
+  }
 }
 #whyUs .words p {
   font-size: 1.75rem;
 }
 .buttonsNThings {
   width: 100%;
+}
+@media (max-width: 800px) {
+  .buttonsNThings {
+    display: flex;
+    justify-content: center;
+  }
 }
 .buttonsNThings button {
   background-color: #D03446;
@@ -169,6 +275,140 @@ body .right-side {
   font-size: 2rem;
   border-radius: 10px;
   font-family: 'Montserrat';
-  font-weight: bold;
+  font-weight: bolder;
   margin: 2% 0 0;
+  outline: none;
+}
+.buttonsNThings button:hover {
+  background-color: #FCFBFB;
+  color: #D03446;
+  border: 1px solid #D03446;
+}
+.buttonsNThings button:active {
+  background-color: #E1CEC9;
+  color: #4A3731;
+  border: 1px solid #4A3731;
+}
+@media (max-width: 800px) {
+  .buttonsNThings button {
+    background-color: #D03446;
+    color: #FCFBFB;
+    width: 200px;
+    height: 75px;
+    font-size: 2rem;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    margin: 2% 0 0;
+    outline: none;
+  }
+  .buttonsNThings button:hover {
+    background-color: #FCFBFB;
+    color: #D03446;
+    border: 1px solid #D03446;
+  }
+  .buttonsNThings button:active {
+    background-color: #E1CEC9;
+    color: #4A3731;
+    border: 1px solid #4A3731;
+  }
+}
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 800px) {
+  .blocks {
+    flex-direction: column;
+  }
+}
+.blocks .person {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+  border-bottom: 2px dashed #E1CEC9;
+  padding: 3% 0;
+}
+@media (max-width: 800px) {
+  .blocks .person {
+    width: 100%;
+  }
+}
+.blocks .person .portfolio {
+  width: 64%;
+  margin-left: 17%;
+}
+.blocks .person .portfolio img {
+  margin-bottom: 4%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  box-shadow: 2px 2px #9C8D84;
+}
+.blocks .person .team {
+  text-align: center;
+}
+.blocks .person p {
+  padding: 4%;
+}
+.blocks .person button {
+  background-color: #D03446;
+  color: #FCFBFB;
+  width: 150px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  margin: 2% 0 0;
+  outline: none;
+  margin-left: 4%;
+}
+.blocks .person button:hover {
+  background-color: #FCFBFB;
+  color: #D03446;
+  border: 1px solid #D03446;
+}
+.blocks .person button:active {
+  background-color: #E1CEC9;
+  color: #4A3731;
+  border: 1px solid #4A3731;
+}
+.blocks .person button:hover {
+  background-color: #4A3731;
+  color: #FCFBFB;
+  border: none;
+}
+.blocks .person button:active {
+  background-color: #BE6360;
+  border: 1px solid #4A3731;
+}
+@media (max-width: 800px) {
+  .blocks .person button {
+    background-color: #D03446;
+    color: #FCFBFB;
+    width: 200px;
+    height: 50px;
+    font-size: 2.3rem;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    margin: 2% 0 0;
+    outline: none;
+  }
+  .blocks .person button:hover {
+    background-color: #FCFBFB;
+    color: #D03446;
+    border: 1px solid #D03446;
+  }
+  .blocks .person button:active {
+    background-color: #E1CEC9;
+    color: #4A3731;
+    border: 1px solid #4A3731;
+  }
+}
+@media (max-width: 800px) {
+  .heading {
+    width: 100%;
+  }
 }

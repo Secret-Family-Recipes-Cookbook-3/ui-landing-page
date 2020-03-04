@@ -1,0 +1,69 @@
+//STYLING FOR MEET THE TEAM PAGE
+
+.blocks{
+    display: flex;
+    flex-wrap: wrap;
+
+    @media @tablet{
+        flex-direction: column;
+    }//end of mq
+
+    .person{
+        display:flex;
+        flex-direction: column;
+        width: 47%;
+        .bdr-btm();
+        padding: 3% 0;
+
+        @media @tablet{
+            width: 100%;
+        }//end of mq
+
+        .portfolio{
+            width: 64%;
+            margin-left: 17%;
+
+            img{
+                margin-bottom: 4%;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding: 5px;
+                box-shadow: 2px 2px @teddy;
+            }//end of img
+        }//end of portfolio
+
+        .team{
+            text-align: center;
+        }//end of team
+
+        p{
+            padding:4%;
+        }
+        button{
+            .button(150px, 45px, 2rem);
+                margin-left: 4%;
+                // background-color: @berry;
+
+            &:hover{
+                background-color: @dark;
+                color: @white;
+                border:none;
+            }//end of hover
+
+            &:active{
+                    background-color: @berry;
+                    border: 1px solid @dark;
+            }//active
+
+            @media @tablet{
+                .button(200px, 50px, 2.3rem);
+            }
+        }//end of button
+    }//end of person
+}//end of .blocks
+
+.heading{
+    @media @tablet{
+        width: 100%;
+    }//end of mq
+}//end of heading

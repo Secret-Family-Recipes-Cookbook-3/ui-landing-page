@@ -14,18 +14,31 @@
     padding: 2%;
   }
 
-  .bdr-btm{
-      border-bottom: 3px solid @beige;
+  .bdr-btm(){
+      border-bottom: 2px dashed @break-lines;
   }
 
   .button(@width, @height, @text){
-      background-color: @red;
+      background-color: @button-bg;
       color: @white;
       width: @width;
       height: @height;
       font-size: @text;
       border-radius: 10px;
       font-family: @Monty;
-      font-weight: bold;
+      font-weight: bolder;
       margin: 2% 0 0;
-  }
+      outline:none;
+
+      &:hover{
+          background-color: @white;
+          color: @red;
+          border: 1px solid @red;
+      }//hover end
+
+      &:active{
+          background-color: @beige;
+          color: @dark;
+          border: 1px solid @dark;
+      }//active end
+  }//button end

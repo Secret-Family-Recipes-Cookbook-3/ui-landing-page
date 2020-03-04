@@ -8,15 +8,22 @@
 
     h2, h3{
         padding: 2% 0;
-    }
+    }//h2, h3
 }//end of content
+
 #about p{
     padding-bottom: 15px;
-}
+}//end of about p
+
 .reason{
     display:flex;
     .bdr-btm();
     padding: 3% 0;
+
+    @media @mobile{
+        flex-direction: column;
+        padding:0;
+    }//end of mq
 }//end of reason
 
 #whyUs{
@@ -30,12 +37,28 @@
             width:75%;
             height:100%;
             object-fit: contain;
+
+            @media @tablet{
+                width: 90%;
+            }//end of mq
+            @media @mobile{
+                width:100%;
+            }//end of mq
         }//end of img
     }//image container
+
+    .c{
+        margin-left: 1%;
+    }//end of image c <--so photo and paragraphs align with other two
 
     .words{
         margin-right: 3%;
 
+        h3{
+            @media @mobile{
+                font-size: 2.9rem;
+            }//end of mq
+        }
         p{
             font-size:1.75rem;
         }//p
@@ -45,7 +68,17 @@
 .buttonsNThings{
     width:100%;
     
+    @media @tablet{
+        display:flex;
+        justify-content: center;
+    }//end of mq
+
     button{
-        .button(150px, 75px, 2rem)
-    }
-}
+        .button(150px, 75px, 2rem);
+
+        @media @tablet{
+            .button(200px, 75px, 2rem);
+        }//end of mq
+    }//end of button
+}//end of buttonNThings
+

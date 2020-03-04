@@ -13,6 +13,14 @@ h1{
     font-size: @h1size;
     font-family: 'Abril Fatface';
     color: @h1;
+
+    @media @tablet{
+        font-size: @h1size800;
+        text-align: center;
+    }//end of mq
+    @media @mobile{
+        font-size: @h1size500;
+    }//end of mq
 }
 
 h2, h3{
@@ -20,13 +28,32 @@ h2, h3{
     font-size: @h2size;
     color: @h2;
     padding-bottom: 10px;
+
+    @media @tablet{
+        font-size: @h2size800;
+        text-align: center;
+    }//end of mq
+    @media @mobile{
+        font-size: @h2size500;
+    }//end of mq
 }
 h3{
     font-size: @h3size;
+
+    @media @tablet{
+        font-size: @h3size800;
+    }//end of mq
+    @media @mobile{
+        font-size: @h3size500;
+    }//end of mq
 }
 p, a{
     font-size: @paSize;
     font-family: 'Montserrat';
+
+    @media @tablet{
+        text-align: center;
+    }//end of mq
 }
 
 p{
@@ -43,19 +70,22 @@ body{
     display:flex;
 
     .left-side{
-        width: 100%;
-        margin: 0 auto;
+        width: 80%;
+        margin: 0 0;
         background-color: @left-bg;
 
+        @media @tablet{
+            width:75%;
+        }
+        @media @mobile{
+            width: 70%;
+        }//end of mq
         section{
             display: flex;
             flex-wrap: wrap;
         }//end of section
     }//end of left-side
 
-    .right-side{
-        background-color: @right-bg;
-    }
 }//end of body
 
 
