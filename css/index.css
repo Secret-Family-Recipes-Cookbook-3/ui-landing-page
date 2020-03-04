@@ -84,6 +84,10 @@ body .right-side {
 .right-side {
   background-color: #BE6360;
   width: 22%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: fixed;
 }
 .right-side h2 {
   color: #FCFBFB;

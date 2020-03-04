@@ -3,9 +3,11 @@
 .right-side{
     background-color:@right-bg;
     width: 22%;
-    
-    div{
-    }//end of divs
+    height:100%;
+    top:0;
+    right:0;
+    position: fixed;
+
       h2{
           color: @white;
           padding: 10% 2%;
@@ -33,12 +35,14 @@
           &:hover{
               color: @right-bg;
               background-color: @white;
-          }
-        }
+          }//hover end
+        }//(a) end
       }//end of nav
     }//end of .links
+
     footer{
         .flex(center, center);
     }//end of footer
+
   }//end of right-side
 
