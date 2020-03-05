@@ -319,6 +319,9 @@ body .left-side section {
     border: 1px solid #4A3731;
   }
 }
+.buttonsNThings .log {
+  margin-left: 5%;
+}
 #intro {
   border-bottom: 3px solid #9C8D84;
 }
