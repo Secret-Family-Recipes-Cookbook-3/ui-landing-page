@@ -52,11 +52,12 @@
 
     footer{
         .flex(center, center);
-        // padding: 8% 0;
+        padding: 8% 0;
 
         .icons{
           .flex(space-evenly, center);
           width: 100%;
+
 
           i{
             color: @dark;
@@ -66,6 +67,10 @@
             }//end of hove
           }//end of i
         }//end of .icons
+
+        @media @tablet{
+          padding: 10% 0;
+        }
     }//end of footer
 
     @media @tablet{
