@@ -235,6 +235,11 @@ body .left-side section {
 #whyUs .image {
   height: 345px;
 }
+@media (max-width: 600px) {
+  #whyUs .image {
+    margin: 4% 0;
+  }
+}
 #whyUs .image img {
   width: 75%;
   height: 100%;
@@ -360,8 +365,14 @@ body .left-side section {
 .blocks .person .team {
   text-align: center;
 }
+@media (max-width: 600px) {
+  .blocks .person .team {
+    font-size: x-large;
+  }
+}
 .blocks .person p {
   padding: 4%;
+  font-size: 1.75rem;
 }
 .blocks .person button {
   background-color: #D03446;
